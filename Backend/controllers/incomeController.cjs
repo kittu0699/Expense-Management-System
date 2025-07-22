@@ -61,7 +61,7 @@ exports.downloadIncomeExcel = async (req, res) => {
         const data = income.map((item) => ({
             Source: item.source,
             Amount: item.amount,
-            Date: item.data,
+            Date: item.date,
         }));
 
         const wb = xlsx.utils.book_new();
