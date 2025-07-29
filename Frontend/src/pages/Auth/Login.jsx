@@ -3,7 +3,7 @@ import AuthLayout from '../../components/layouts/AuthLayout';
 import { useNavigate, Link } from "react-router-dom";
 import Input from '../../components/Inputs/input';
 import { validateEmail } from '../../utils/helper.cjs';
-import axiosInstance from "../../utils/axiosinstance.cjs";
+import axiosInstance from "../../utils/axiosInstance.cjs";
 import { API_PATHS } from '../../utils/apiPaths.cjs';
 import { UserContext } from '../../context/userContext';
 
@@ -58,7 +58,7 @@ const Login = () => {
 
   return (
     <AuthLayout>
-      <div className='lg:w-[70%] h-3/4 md:h-full flex-col justify-center mt-36'>
+      <div className='lg:w-[70%] h-3/4 md:h-full flex flex-col justify-center'>
         <h3 className='text-xl font-semibold text-black'>Welcome Back</h3>
         <p className='text-xs text-slate-700 mt-[5px] mb-6'>Please enter your details to log in</p>
 
@@ -79,7 +79,7 @@ const Login = () => {
 
            {error && <p className="text-red-500 text-xs pb-2.5">{error} </p> }
 
-            <button type='submit' className='btn-primary'>
+            <button type='submit' className='btn-primary cursor-pointer'>
               Login
             </button>
 

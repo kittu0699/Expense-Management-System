@@ -3,7 +3,7 @@ import DashboardLayout from '../../components/layouts/DashboardLayout';
 import { useUserAuth } from '../../hooks/useUserAuth';
 import { useNavigate } from 'react-router-dom';
 import { API_PATHS } from '../../utils/apiPaths.cjs';
-import axiosInstance from '../../utils/axiosinstance.cjs';
+import axiosInstance from '../../utils/axiosInstance.cjs';
 import InfoCard from '../../components/Cards/InfoCard';
 
 import { LuHandCoins, LuWalletMinimal }  from 'react-icons/lu';
@@ -65,7 +65,7 @@ const Home = () => {
           icon={<LuWalletMinimal />}
           label="Total Income"
           value={addThousandsSeparator(dashboardData?.totalIncome || 0)}
-          color="bg-orange-500"
+          color="bg-green-500"
           />
 
           <InfoCard
@@ -85,7 +85,7 @@ const Home = () => {
         <FinanceOverView
           totalBalance={dashboardData?.totalBalance || 0}
           totalIncome={dashboardData?.totalIncome || 0}
-          totalExpense={dashboardData?.totalExpense || 0}
+          totalExpenses={dashboardData?.totalExpenses || 0}
           />
 
           <ExpenseTransactions

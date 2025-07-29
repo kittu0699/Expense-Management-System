@@ -23,7 +23,7 @@ const App = () => {
           <Route path='/dashboard' element={<Home />} />
           <Route path='/income' element={<Income />} />
           <Route path='/expense' element={<Expense />} />
-          <Route path='/logout' element={<Login />} />
+          {/* <Route path='/logout' element={<Login />} />  */}
         </Routes>
       </Router>
     </div>
@@ -43,12 +43,12 @@ const App = () => {
 export default App;
 
 
-const Root = () =>{
+const Root = () => {
   //Check if token exists in localStorage
-  const isAuthenticated = !!localStorage.getItem("token");
+  const isAuthenticate = !!localStorage.getItem("token");
 
   //Redirect to dashboard if authenticated, otherwise to login
-  return isAuthenticated ? (
+  return isAuthenticate ? (
     <Navigate to="/dashboard" />
   ) : (
     <Navigate to="/login" />

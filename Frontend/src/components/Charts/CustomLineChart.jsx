@@ -19,7 +19,7 @@ const CustomLineChart = ({ data }) => {
     };
 
     return (
-        <div className='bg=-white'>
+        <div className='bg-white'>
             <ResponsiveContainer width="100%" height={300}>
                 <AreaChart data={data}>
                     <defs>

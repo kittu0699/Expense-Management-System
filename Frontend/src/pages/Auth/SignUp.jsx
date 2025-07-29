@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Input from '../../components/Inputs/input';
 import { validateEmail } from '../../utils/helper.cjs';
 import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector"
-import axiosInstance from '../../utils/axiosinstance.cjs';
+import axiosInstance from '../../utils/axiosInstance.cjs';
 import { API_PATHS } from '../../utils/apiPaths.cjs';
 import { UserContext } from '../../context/userContext';
 import uploadImage from '../../utils/uploadimage.cjs';
@@ -77,7 +77,7 @@ const SignUp = () => {
 
   return (
     <AuthLayout>
-      <div className="lg:w-[100%] h-auto md:h-full  md:mt-0 flex flex-col justify-center">
+      <div className="lg:w-[100%] h-auto md:h-full mt-10  md:mt-0 flex flex-col justify-center">
         <h3 className="text-xl font-semibold text-black">
           Create an Account
         </h3>
@@ -117,7 +117,7 @@ const SignUp = () => {
 
            {error && <p className="text-red-500 text-xs pb-2.5">{error} </p> }
           
-                      <button type='submit' className='btn-primary'>
+                      <button type='submit' className='btn-primary cursor-pointer'>
                         Sign UP
                       </button>
           

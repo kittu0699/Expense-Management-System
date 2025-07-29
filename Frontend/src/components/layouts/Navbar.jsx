@@ -19,7 +19,16 @@ const Navbar = ({activeMenu}) => {
             )}
          </button>
 
-         <h2 className="text-lg font-medium text-black">Expense Management System</h2>
+         <div className="flex items-center justify-center gap-4 my-1">
+        <img
+          src="/logo.png"
+          alt="Logo"
+          className="w-[50px] h-[50px] object-contain"
+        />
+        <h2 className="text-xl font-semibold text-gray-800">
+          Expense Management System
+        </h2>
+      </div>
 
          {openSideMenu && (
             <div className="fixed top-[61px] -ml-4 bg-white">
@@ -27,7 +36,7 @@ const Navbar = ({activeMenu}) => {
             </div>
          )}
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;

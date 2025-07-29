@@ -40,7 +40,7 @@ const toggleShowPassword = () => {
          )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
