@@ -11,4 +11,4 @@ data.
 
 • Implemented robust form validation on both frontend and backend to enhance security and prevent invalid entries.
 
-• Utilized MongoDB for flexible and efficient storage of user data, expenses, and categories, supporting future scalability and performance..
+• Utilized MongoDB for flexible and efficient storage of user data, expenses, and categories, supporting future scalability and performance.
