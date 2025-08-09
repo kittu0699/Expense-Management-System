@@ -5,7 +5,7 @@ import Input from '../../components/Inputs/input';
 import { validateEmail } from '../../utils/helper.cjs';
 import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector"
 import axiosInstance from '../../utils/axiosInstance.cjs';
-import { API_PATHS } from '../../utils/apiPaths.cjs';
+import { API_PATHS } from '../../utils/apiPaths.js';
 import { UserContext } from '../../context/userContext';
 import uploadImage from '../../utils/uploadimage.cjs';
 
