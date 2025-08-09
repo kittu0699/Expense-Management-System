@@ -56,7 +56,12 @@ const SignUp = () => {
       if (token) {
         localStorage.setItem("token", token);
         updateUser(user);
-        navigate("/dashboard");
+
+        //Show success alert
+        alert("Account Created Successfully!");
+
+        //Redirect to login page
+        navigate("/login");
       }
     } catch (error) {
       if (error.response && error.response.data.message) {
