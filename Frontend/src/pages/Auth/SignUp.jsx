@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import AuthLayout from '../../components/layouts/AuthLayout'
 import { useNavigate, Link } from "react-router-dom";
-import Input from '../../components/Inputs/input';
+import Input from '../../components/Inputs/Input.jsx';
 import { validateEmail } from '../../utils/helper.cjs';
 import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector"
 import axiosInstance from '../../utils/axiosInstance.js';
