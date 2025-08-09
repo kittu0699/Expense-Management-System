@@ -3,7 +3,7 @@ import AuthLayout from '../../components/layouts/AuthLayout';
 import { useNavigate, Link } from "react-router-dom";
 import Input from '../../components/Inputs/Input.jsx';
 import { validateEmail } from '../../utils/helper.cjs';
-import axiosInstance from "../../utils/axiosInstance.cjs";
+import axiosInstance from "../../utils/axiosInstance.js";
 import { API_PATHS } from '../../utils/apiPaths.js';
 import { UserContext } from '../../context/UserContext.jsx';
 

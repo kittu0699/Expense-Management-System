@@ -3,7 +3,7 @@ import DashboardLayout from '../../components/layouts/DashboardLayout';
 import { useUserAuth } from '../../hooks/useUserAuth';
 import { useNavigate } from 'react-router-dom';
 import { API_PATHS } from '../../utils/apiPaths.js';
-import axiosInstance from '../../utils/axiosInstance.cjs';
+import axiosInstance from '../../utils/axiosInstance.js';
 import InfoCard from '../../components/Cards/InfoCard';
 
 import { LuHandCoins, LuWalletMinimal }  from 'react-icons/lu';
