@@ -4,8 +4,8 @@ import { useNavigate, Link } from "react-router-dom";
 import Input from '../../components/Inputs/Input.jsx';
 import { validateEmail } from '../../utils/helper.cjs';
 import ProfilePhotoSelector from "../../components/Inputs/ProfilePhotoSelector"
-import axiosInstance from '../../utils/axiosInstance.js';
-import { API_PATHS } from '../../utils/apiPaths.js';
+import axiosInstance from '../../utils/axiosInstance.cjs';
+import { API_PATHS } from '../../utils/apiPaths.cjs';
 import { UserContext } from '../../context/UserContext.jsx';
 import uploadImage from '../../utils/uploadimage.cjs';
 

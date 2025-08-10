@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import DashboardLayout from '../../components/layouts/DashboardLayout';
 import IncomeOverview from '../../components/Income/IncomeOverview';
-import axiosInstance from '../../utils/axiosInstance.js';
-import { API_PATHS } from '../../utils/apiPaths.js';
+import axiosInstance from '../../utils/axiosInstance.cjs';
+import { API_PATHS } from '../../utils/apiPaths.cjs';
 import Modal from '../../components/Modal';
 import AddIncomeForm from '../../components/Income/AddIncomeForm';
 import toast from 'react-hot-toast';

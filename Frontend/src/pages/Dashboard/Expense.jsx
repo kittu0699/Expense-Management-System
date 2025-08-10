@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import DashboardLayout from '../../components/layouts/DashboardLayout';
 import ExpenseOverview from '../../components/Expense/ExpenseOverview';
-import axiosInstance from '../../utils/axiosInstance.js';
-import { API_PATHS } from '../../utils/apiPaths.js';
+import axiosInstance from '../../utils/axiosInstance.cjs';
+import { API_PATHS } from '../../utils/apiPaths.cjs';
 import Modal from '../../components/Modal';
 import AddExpenseForm from '../../components/Expense/AddExpenseForm';
 import toast from 'react-hot-toast';
